@@ -65,7 +65,7 @@ function ProfileCard() {
   return (
     <motion.div
       variants={itemVariants}
-      className="relative flex flex-col items-center gap-6 rounded-2xl border border-border bg-background/50 p-6 backdrop-blur-sm sm:flex-row sm:items-start sm:gap-8 sm:p-8"
+      className="relative flex flex-col items-center gap-5 rounded-2xl border border-border bg-background/50 p-4 backdrop-blur-sm sm:flex-row sm:items-start sm:gap-8 sm:p-8"
     >
       <motion.div
         className="relative shrink-0"
@@ -96,40 +96,40 @@ function ProfileCard() {
 
       <div className="flex flex-col items-center text-center sm:items-start sm:text-left">
         <motion.div
-          className="mb-3 inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-3 py-1"
+          className="mb-2 inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-2.5 py-1 sm:mb-3 sm:px-3"
           animate={{
             boxShadow: ["0 0 0 0 rgba(0,0,255,0)", "0 0 0 4px rgba(0,0,255,0.1)", "0 0 0 0 rgba(0,0,255,0)"],
           }}
           transition={{ duration: 2, repeat: Infinity }}
         >
-          <span className="h-2 w-2 rounded-full bg-accent" />
-          <span className="text-xs font-medium text-accent">{t("experience.years")} {t("experience.description")}</span>
+          <span className="h-1.5 w-1.5 rounded-full bg-accent sm:h-2 sm:w-2" />
+          <span className="text-[10px] font-medium text-accent sm:text-xs">{t("experience.years")} {t("experience.description")}</span>
         </motion.div>
 
-        <h2 className="mb-2 text-xl font-bold sm:text-2xl">Lucas Venancio</h2>
-        <p className="mb-4 max-w-md text-sm text-muted sm:text-base">
+        <h2 className="mb-2 text-lg font-bold sm:text-2xl">Lucas Venancio</h2>
+        <p className="mb-4 max-w-md text-xs text-muted sm:text-base">
           <strong className="text-foreground">{t("intro")}</strong> {t("introDescription")}
         </p>
 
-        <div className="flex flex-wrap justify-center gap-3 sm:justify-start">
+        <div className="flex flex-wrap justify-center gap-2 sm:justify-start sm:gap-3">
           <motion.a
             href="/cv-lucas-venancio.pdf"
             download
-            className="group flex items-center gap-2 rounded-full bg-accent px-4 py-2 text-sm font-medium text-white"
+            className="group flex items-center gap-1.5 rounded-full bg-accent px-3 py-1.5 text-xs font-medium text-white sm:gap-2 sm:px-4 sm:py-2 sm:text-sm"
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
           >
-            <Download className="h-4 w-4" />
+            <Download className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
             {t("downloadCV")}
           </motion.a>
           <Link href="/contact">
             <motion.button
-              className="group flex items-center gap-2 rounded-full border border-border px-4 py-2 text-sm font-medium"
+              className="group flex items-center gap-1.5 rounded-full border border-border px-3 py-1.5 text-xs font-medium sm:gap-2 sm:px-4 sm:py-2 sm:text-sm"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
             >
               {t("contactMe")}
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1 sm:h-4 sm:w-4" />
             </motion.button>
           </Link>
         </div>

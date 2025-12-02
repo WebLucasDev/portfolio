@@ -56,13 +56,13 @@ function TechBadge({ name, color, index }: { name: string; color: string; index:
         style={{ backgroundColor: color }}
       />
       <motion.span
-        className="relative flex items-center gap-1.5 rounded-full border border-border bg-background px-3 py-2 text-xs font-medium transition-all duration-300 group-hover:border-transparent sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm"
+        className="relative flex items-center gap-1 rounded-full border border-border bg-background px-2.5 py-1.5 text-[10px] font-medium transition-all duration-300 group-hover:border-transparent sm:gap-2 sm:px-5 sm:py-2.5 sm:text-sm"
         whileHover={{
           boxShadow: `0 0 20px ${color}30`,
         }}
       >
         <motion.span
-          className="h-1.5 w-1.5 rounded-full sm:h-2 sm:w-2"
+          className="h-1 w-1 rounded-full sm:h-2 sm:w-2"
           style={{ backgroundColor: color }}
           animate={{
             scale: [1, 1.2, 1],
@@ -85,7 +85,7 @@ export function TechStack() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section ref={ref} className="relative border-t border-border py-12 sm:py-20">
+    <section ref={ref} className="relative border-t border-border py-8 sm:py-20">
       <motion.div
         className="pointer-events-none absolute inset-0 overflow-hidden"
         initial={{ opacity: 0 }}
@@ -95,7 +95,7 @@ export function TechStack() {
         <div className="absolute left-1/2 top-0 h-px w-1/2 -translate-x-1/2 bg-gradient-to-r from-transparent via-accent/50 to-transparent" />
       </motion.div>
 
-      <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
+      <div className="mx-auto max-w-4xl px-3 text-center sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -121,7 +121,7 @@ export function TechStack() {
         </motion.div>
 
         <motion.div
-          className="flex flex-wrap items-center justify-center gap-2 sm:gap-4"
+          className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-4"
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
@@ -132,14 +132,14 @@ export function TechStack() {
         </motion.div>
 
         <motion.div
-          className="mt-8 flex items-center justify-center gap-4 text-muted/40 sm:mt-12 sm:gap-8"
+          className="mt-6 flex items-center justify-center gap-3 px-2 text-muted/40 sm:mt-12 sm:gap-8 sm:px-0"
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ duration: 0.8, delay: 0.8 }}
         >
           <div className="h-px flex-1 bg-gradient-to-r from-transparent to-border" />
           <motion.span
-            className="text-xs uppercase tracking-widest"
+            className="whitespace-nowrap text-[10px] uppercase tracking-widest sm:text-xs"
             animate={{ opacity: [0.4, 0.7, 0.4] }}
             transition={{ duration: 3, repeat: Infinity }}
           >

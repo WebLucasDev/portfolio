@@ -127,7 +127,7 @@ function ProjectCard({ project, index, activeIndex, totalProjects, viewCodeText,
     >
       <motion.div
         onClick={handleClick}
-        className={`group relative w-[280px] overflow-hidden rounded-2xl border bg-background/80 backdrop-blur-sm transition-colors sm:w-[340px] md:w-[400px] ${
+        className={`group relative w-[260px] overflow-hidden rounded-2xl border bg-background/80 backdrop-blur-sm transition-colors sm:w-[320px] md:w-[380px] ${
           isActive ? "cursor-pointer border-accent/50 shadow-lg shadow-accent/10" : "border-border/50"
         }`}
         whileHover={isActive ? { scale: 1.02, y: -5 } : {}}
@@ -247,7 +247,7 @@ function ProjectModal({ project, onClose, featuresText, installationText, closeT
 
   return (
     <motion.div
-      className="fixed inset-0 z-[100] flex items-center justify-center p-4"
+      className="fixed inset-0 z-[100] flex items-center justify-center p-2 sm:p-4"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -261,7 +261,7 @@ function ProjectModal({ project, onClose, featuresText, installationText, closeT
       />
 
       <motion.div
-        className="relative w-full max-w-2xl"
+        className="relative w-full max-w-2xl max-h-[90vh] overflow-hidden"
         style={{ perspective: 1200 }}
         onClick={(e) => e.stopPropagation()}
       >
@@ -589,7 +589,7 @@ export function ProjectsSection() {
 
         <motion.div
           variants={itemVariants}
-          className="relative mx-auto h-[420px] w-full max-w-4xl sm:h-[480px] md:h-[520px]"
+          className="relative mx-auto h-[380px] w-full max-w-4xl sm:h-[450px] md:h-[500px]"
           style={{ perspective: 1200, perspectiveOrigin: "center center" }}
         >
           <motion.div

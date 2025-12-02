@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowRight, Github, Instagram, Linkedin, Mail } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
@@ -224,12 +224,12 @@ export function HeroSection() {
         className="pointer-events-none absolute inset-0 opacity-30"
         style={{ x: backgroundX, y: backgroundY }}
       >
-        <div className="absolute left-1/4 top-1/4 h-48 w-48 rounded-full bg-accent/10 blur-3xl sm:h-64 sm:w-64" />
-        <div className="absolute bottom-1/4 right-1/4 h-32 w-32 rounded-full bg-accent/5 blur-3xl sm:h-48 sm:w-48" />
+        <div className="absolute left-1/4 top-1/4 h-32 w-32 rounded-full bg-accent/10 blur-3xl sm:h-64 sm:w-64" />
+        <div className="absolute bottom-1/4 right-1/4 h-24 w-24 rounded-full bg-accent/5 blur-3xl sm:h-48 sm:w-48" />
       </motion.div>
 
       <motion.div
-        className="relative z-10 mx-auto w-full max-w-3xl text-center"
+        className="relative z-10 mx-auto w-full max-w-3xl px-2 text-center sm:px-0"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -240,7 +240,7 @@ export function HeroSection() {
 
         <motion.h1
           variants={itemVariants}
-          className="mb-4 text-3xl font-bold tracking-tight sm:mb-6 sm:text-4xl md:text-5xl lg:text-6xl"
+          className="mb-4 text-2xl font-bold tracking-tight sm:mb-6 sm:text-3xl md:text-4xl lg:text-5xl"
         >
           {t("greeting")}{" "}
           <span className="relative inline-block">
@@ -276,11 +276,11 @@ export function HeroSection() {
 
         <motion.div
           variants={itemVariants}
-          className="mb-10 flex flex-col items-center justify-center gap-3 sm:mb-14 sm:flex-row sm:gap-4"
+          className="mb-8 flex flex-col items-center justify-center gap-3 px-2 sm:mb-14 sm:flex-row sm:gap-4 sm:px-0"
         >
-          <Link href="/projects">
+          <Link href="/projects" className="w-full sm:w-auto">
             <motion.button
-              className="group relative flex w-full items-center justify-center gap-2 overflow-hidden rounded-full bg-accent px-6 py-3 text-sm font-medium text-white sm:w-auto sm:px-7 sm:py-3.5"
+              className="group relative flex w-full items-center justify-center gap-2 overflow-hidden rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-white sm:w-auto sm:px-7 sm:py-3.5"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
             >
@@ -294,9 +294,9 @@ export function HeroSection() {
               <ArrowRight className="relative h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </motion.button>
           </Link>
-          <Link href="/contact">
+          <Link href="/contact" className="w-full sm:w-auto">
             <motion.button
-              className="group relative flex w-full items-center justify-center gap-2 overflow-hidden rounded-full border border-border bg-transparent px-6 py-3 text-sm font-medium sm:w-auto sm:px-7 sm:py-3.5"
+              className="group relative flex w-full items-center justify-center gap-2 overflow-hidden rounded-full border border-border bg-transparent px-5 py-2.5 text-sm font-medium sm:w-auto sm:px-7 sm:py-3.5"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
             >
@@ -315,14 +315,14 @@ export function HeroSection() {
           variants={itemVariants}
           className="flex items-center justify-center gap-4 pb-12 sm:gap-5 sm:pb-8"
         >
-          <MagneticButton href="https://github.com/lucasvenancio">
+          <MagneticButton href="https://github.com/WebLucasDev">
             <Github className="h-5 w-5" aria-label={tSocial("github")} />
           </MagneticButton>
-          <MagneticButton href="https://linkedin.com/in/lucasvenancio">
+          <MagneticButton href="https://www.linkedin.com/in/lucasvenancio-dev/">
             <Linkedin className="h-5 w-5" aria-label={tSocial("linkedin")} />
           </MagneticButton>
-          <MagneticButton href="mailto:contato@lucasvenancio.com">
-            <Mail className="h-5 w-5" aria-label={tSocial("email")} />
+          <MagneticButton href="https://www.instagram.com/luca1_venancio/">
+            <Instagram className="h-5 w-5" aria-label={tSocial("instagram")} />
           </MagneticButton>
         </motion.div>
       </motion.div>

@@ -158,7 +158,7 @@ function SocialButton({ icon, href, label, delay = 0 }: SocialButtonProps) {
       transition={{ delay, type: "spring", stiffness: 200 }}
       whileHover={{ scale: 1.1, y: -3 }}
       whileTap={{ scale: 0.95 }}
-      className="flex h-12 w-12 items-center justify-center rounded-full border border-border bg-background/50 text-muted backdrop-blur-sm transition-colors hover:border-accent hover:text-accent"
+      className="flex h-10 w-10 items-center justify-center rounded-full border border-border bg-background/50 text-muted backdrop-blur-sm transition-colors hover:border-accent hover:text-accent sm:h-12 sm:w-12"
       aria-label={label}
     >
       {icon}
@@ -179,14 +179,14 @@ function InfoBadge({ icon, title, value, delay = 0 }: InfoBadgeProps) {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay, duration: 0.5 }}
-      className="flex items-center gap-3 rounded-xl border border-border/50 bg-background/30 px-4 py-3 backdrop-blur-sm"
+      className="flex items-center gap-2 rounded-xl border border-border/50 bg-background/30 px-2.5 py-2 backdrop-blur-sm sm:gap-3 sm:px-4 sm:py-3"
     >
-      <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent/10 text-accent">
+      <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-accent/10 text-accent sm:h-10 sm:w-10">
         {icon}
       </div>
-      <div>
-        <p className="text-xs text-muted">{title}</p>
-        <p className="text-xs font-medium">{value}</p>
+      <div className="min-w-0">
+        <p className="text-[10px] text-muted sm:text-xs">{title}</p>
+        <p className="truncate text-[10px] font-medium sm:text-xs">{value}</p>
       </div>
     </motion.div>
   );
@@ -320,27 +320,27 @@ export function ContactSection() {
         initial="hidden"
         animate="visible"
       >
-        <motion.div variants={itemVariants} className="mb-12 text-center sm:mb-16">
+        <motion.div variants={itemVariants} className="mb-10 text-center sm:mb-16">
           <motion.span
-            className="mb-3 inline-block text-xs font-medium uppercase tracking-widest text-accent sm:mb-4 sm:text-sm"
+            className="mb-2 inline-block text-xs font-medium uppercase tracking-widest text-accent sm:mb-4 sm:text-sm"
             initial={{ opacity: 0, letterSpacing: "0.1em" }}
             animate={{ opacity: 1, letterSpacing: "0.2em" }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             {t("title")}
           </motion.span>
-          <h1 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
+          <h1 className="mb-3 text-2xl font-bold tracking-tight sm:mb-4 sm:text-4xl md:text-5xl">
             {t("subtitle")}
           </h1>
-          <p className="mx-auto max-w-2xl text-sm text-muted sm:text-base">
+          <p className="mx-auto max-w-2xl px-2 text-xs text-muted sm:px-0 sm:text-base">
             {t("description")}
           </p>
         </motion.div>
 
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-4 sm:gap-6 md:grid-cols-2">
           <motion.div variants={itemVariants}>
             <ContactCard
-              icon={<MessageCircle className="h-6 w-6" />}
+              icon={<MessageCircle className="h-5 w-5 sm:h-6 sm:w-6" />}
               title={t("whatsapp.title")}
               description={t("whatsapp.description")}
               action={t("whatsapp.action")}
@@ -350,26 +350,26 @@ export function ContactSection() {
             />
           </motion.div>
 
-          <motion.div variants={itemVariants} className="space-y-4">
-            <div className="rounded-2xl border border-border bg-background/50 p-6 backdrop-blur-sm">
-              <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-muted">
+          <motion.div variants={itemVariants} className="space-y-3 sm:space-y-4">
+            <div className="rounded-2xl border border-border bg-background/50 p-4 backdrop-blur-sm sm:p-6">
+              <h3 className="mb-3 text-xs font-semibold uppercase tracking-wider text-muted sm:mb-4 sm:text-sm">
                 {t("social.title")}
               </h3>
-              <div className="flex gap-3">
+              <div className="flex gap-2 sm:gap-3">
                 <SocialButton
-                  icon={<Github className="h-5 w-5" />}
+                  icon={<Github className="h-4 w-4 sm:h-5 sm:w-5" />}
                   href="https://github.com/WebLucasDev"
                   label={tSocial("github")}
                   delay={0.3}
                 />
                 <SocialButton
-                  icon={<Linkedin className="h-5 w-5" />}
+                  icon={<Linkedin className="h-4 w-4 sm:h-5 sm:w-5" />}
                   href="https://www.linkedin.com/in/lucasvenancio-dev/"
                   label={tSocial("linkedin")}
                   delay={0.4}
                 />
                 <SocialButton
-                  icon={<Instagram className="h-5 w-5" />}
+                  icon={<Instagram className="h-4 w-4 sm:h-5 sm:w-5" />}
                   href="https://www.instagram.com/luca1_venancio/"
                   label={tSocial("instagram")}
                   delay={0.5}
@@ -377,16 +377,16 @@ export function ContactSection() {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-2 gap-2 sm:gap-3">
               <InfoBadge
-                icon={<MapPin className="h-5 w-5" />}
+                icon={<MapPin className="h-4 w-4 sm:h-5 sm:w-5" />}
                 title={t("location.title")}
                 value={t("location.city")}
                 delay={0.5}
               />
 
               <InfoBadge
-                icon={<Briefcase className="h-5 w-5" />}
+                icon={<Briefcase className="h-4 w-4 sm:h-5 sm:w-5" />}
                 title={t("freelancer.title")}
                 value={t("freelancer.status")}
                 delay={0.6}
@@ -397,17 +397,17 @@ export function ContactSection() {
 
         <motion.div
           variants={itemVariants}
-          className="mx-auto mt-6 max-w-2xl rounded-2xl border border-border bg-background/50 p-6 backdrop-blur-sm"
+          className="mx-auto mt-4 max-w-2xl rounded-2xl border border-border bg-background/50 p-4 backdrop-blur-sm sm:mt-6 sm:p-6"
         >
-          <div className="mb-6 flex items-center justify-center gap-3">
+          <div className="mb-4 flex items-center justify-center gap-2 sm:mb-6 sm:gap-3">
             <motion.div
-              className="flex h-10 w-10 items-center justify-center rounded-xl bg-accent/10 text-accent"
+              className="flex h-8 w-8 items-center justify-center rounded-xl bg-accent/10 text-accent sm:h-10 sm:w-10"
               animate={{ rotate: [0, 360] }}
               transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
             >
-              <Sparkles className="h-5 w-5" />
+              <Sparkles className="h-4 w-4 sm:h-5 sm:w-5" />
             </motion.div>
-            <h2 className="text-lg font-semibold">{t("form.title")}</h2>
+            <h2 className="text-base font-semibold sm:text-lg">{t("form.title")}</h2>
           </div>
           <ContactForm />
         </motion.div>

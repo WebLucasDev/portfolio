@@ -45,7 +45,7 @@ export function Header() {
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
-              Lucas<span className="text-accent">.</span>
+              Lucas Venancio<span className="text-accent">.</span>
             </motion.span>
           </Link>
 

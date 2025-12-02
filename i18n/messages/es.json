@@ -1,0 +1,44 @@
+{
+  "navigation": {
+    "home": "Inicio",
+    "about": "Sobre",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "theme": {
+    "light": "Activar tema claro",
+    "dark": "Activar tema oscuro",
+    "toggle": "Cambiar tema"
+  },
+  "language": {
+    "select": "Seleccionar idioma",
+    "current": "Idioma actual"
+  },
+  "home": {
+    "greeting": "Hola, soy",
+    "name": "Lucas Venancio",
+    "role": "Desarrollador Back-end Java",
+    "description": "apasionado por crear soluciones robustas y escalables. Transformo ideas en código limpio y eficiente.",
+    "viewProjects": "Ver Proyectos",
+    "contactMe": "Contáctame",
+    "techSection": "Tecnologías que utilizo",
+    "alwaysLearning": "Siempre Aprendiendo"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "subtitle": "En construcción..."
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "En construcción..."
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "En construcción..."
+  },
+  "social": {
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "email": "Email"
+  }
+}

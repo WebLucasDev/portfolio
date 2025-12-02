@@ -1,0 +1,44 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "theme": {
+    "light": "Enable light theme",
+    "dark": "Enable dark theme",
+    "toggle": "Toggle theme"
+  },
+  "language": {
+    "select": "Select language",
+    "current": "Current language"
+  },
+  "home": {
+    "greeting": "Hi, I'm",
+    "name": "Lucas Venancio",
+    "role": "Java Back-end Developer",
+    "description": "passionate about creating robust and scalable solutions. I transform ideas into clean and efficient code.",
+    "viewProjects": "View Projects",
+    "contactMe": "Contact Me",
+    "techSection": "Technologies I use",
+    "alwaysLearning": "Always Learning"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Under construction..."
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Under construction..."
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Under construction..."
+  },
+  "social": {
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "email": "Email"
+  }
+}

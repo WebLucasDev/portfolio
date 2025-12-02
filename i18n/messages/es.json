@@ -160,7 +160,42 @@
   },
   "contact": {
     "title": "Contacto",
-    "subtitle": "En construcción..."
+    "subtitle": "¿Hablamos? Ponte en contacto conmigo",
+    "description": "Siempre estoy abierto a nuevas oportunidades, proyectos interesantes o simplemente una buena conversación sobre tecnología. ¡No dudes en enviarme un mensaje!",
+    "whatsapp": {
+      "title": "WhatsApp",
+      "description": "¿Prefieres una conversación más directa? Escríbeme por WhatsApp",
+      "action": "Abrir WhatsApp"
+    },
+    "social": {
+      "title": "Redes Sociales"
+    },
+    "form": {
+      "title": "Envía un mensaje por correo electrónico",
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre",
+      "email": "Email",
+      "emailPlaceholder": "tu@email.com",
+      "message": "Mensaje",
+      "messagePlaceholder": "Escribe tu mensaje aquí...",
+      "send": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "success": "¡Mensaje enviado con éxito!",
+      "error": "Error al enviar mensaje. Inténtalo de nuevo."
+    },
+    "availability": {
+      "title": "Disponibilidad",
+      "status": "Disponible para nuevos proyectos",
+      "response": "Tiempo promedio de respuesta: 24h"
+    },
+    "location": {
+      "title": "Ubicación",
+      "city": "Patos de Minas, MG - Brasil"
+    },
+    "freelancer": {
+      "title": "Disponibilidad",
+      "status": "Freelancer"
+    }
   },
   "social": {
     "github": "GitHub",

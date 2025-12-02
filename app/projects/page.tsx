@@ -1,14 +1,5 @@
-import { getTranslations } from "next-intl/server";
+import { ProjectsSection } from "@/components/projects/ProjectsSection";
 
-export default async function ProjectsPage() {
-  const t = await getTranslations("projects");
-
-  return (
-    <div className="flex min-h-screen items-center justify-center pt-16">
-      <div className="text-center">
-        <h1 className="text-3xl font-bold">{t("title")}</h1>
-        <p className="mt-4 text-muted">{t("subtitle")}</p>
-      </div>
-    </div>
-  );
+export default function ProjectsPage() {
+  return <ProjectsSection />;
 }

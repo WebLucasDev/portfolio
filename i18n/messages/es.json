@@ -90,7 +90,73 @@
   },
   "projects": {
     "title": "Proyectos",
-    "subtitle": "En construcción..."
+    "subtitle": "Explora mis proyectos personales y open source",
+    "viewCode": "Ver Código",
+    "liveDemo": "Demo",
+    "technologies": "Tecnologías",
+    "dragHint": "Arrastra para navegar",
+    "clickToOpen": "Clic para ver detalles",
+    "close": "Cerrar",
+    "features": "Funcionalidades",
+    "installation": "Instalación",
+    "items": [
+      {
+        "id": "portfolio",
+        "title": "Portafolio Personal",
+        "description": "Mi portafolio personal desarrollado con Next.js, Tailwind CSS y Framer Motion. Diseño minimalista con soporte a tema claro/oscuro y multi-idiomas.",
+        "github": "https://github.com/WebLucasDev/portfolio",
+        "demo": "",
+        "image": "/projects/portfolio.png",
+        "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+        "readme": {
+          "about": "Este es mi portafolio personal, desarrollado para presentar mi trayectoria profesional, habilidades técnicas y proyectos. La aplicación fue construida con enfoque en rendimiento, accesibilidad y experiencia del usuario.",
+          "features": ["Diseño responsivo y minimalista", "Soporte a tema claro y oscuro", "Multi-idiomas (PT, EN, ES)", "Animaciones suaves con Framer Motion", "Carrusel 3D de proyectos", "SEO optimizado"],
+          "installation": "npm install && npm run dev"
+        }
+      },
+      {
+        "id": "api-rest",
+        "title": "API REST con Spring Boot",
+        "description": "API RESTful completa con autenticación JWT, documentación Swagger, pruebas unitarias e integración con base de datos PostgreSQL.",
+        "github": "https://github.com/WebLucasDev",
+        "demo": "",
+        "image": "/projects/api-rest.png",
+        "technologies": ["Java", "Spring Boot", "PostgreSQL", "Docker"],
+        "readme": {
+          "about": "API RESTful robusta desarrollada siguiendo las mejores prácticas de arquitectura de software. Incluye autenticación JWT, validación de datos, manejo de excepciones y documentación completa.",
+          "features": ["Autenticación y autorización JWT", "Documentación Swagger/OpenAPI", "Pruebas unitarias con JUnit 5", "Migraciones con Flyway", "Docker Compose para desarrollo", "Patrón Repository y Service Layer"],
+          "installation": "docker-compose up -d && ./mvnw spring-boot:run"
+        }
+      },
+      {
+        "id": "microservices",
+        "title": "Arquitectura de Microservicios",
+        "description": "Sistema distribuido con múltiples microservicios, comunicación asíncrona vía RabbitMQ y orquestación con Docker Compose.",
+        "github": "https://github.com/WebLucasDev",
+        "demo": "",
+        "image": "/projects/microservices.png",
+        "technologies": ["Java", "Spring Cloud", "RabbitMQ", "Docker"],
+        "readme": {
+          "about": "Arquitectura de microservicios completa demostrando patrones como Service Discovery, API Gateway, Circuit Breaker y comunicación asíncrona entre servicios.",
+          "features": ["Service Discovery con Eureka", "API Gateway con Spring Cloud Gateway", "Comunicación asíncrona vía RabbitMQ", "Circuit Breaker con Resilience4j", "Configuración centralizada", "Tracing distribuido con Zipkin"],
+          "installation": "docker-compose up -d"
+        }
+      },
+      {
+        "id": "ecommerce",
+        "title": "E-commerce Backend",
+        "description": "Backend completo para e-commerce con gestión de productos, carrito, pedidos e integración con pasarela de pago.",
+        "github": "https://github.com/WebLucasDev",
+        "demo": "",
+        "image": "/projects/ecommerce.png",
+        "technologies": ["Java", "Spring Boot", "MySQL", "Redis"],
+        "readme": {
+          "about": "Backend completo para plataforma de e-commerce con todas las funcionalidades necesarias para una tienda virtual profesional, incluyendo gestión de productos, carrito de compras y procesamiento de pedidos.",
+          "features": ["Gestión completa de productos y categorías", "Carrito de compras con Redis", "Procesamiento de pedidos", "Integración con pasarela de pago", "Sistema de cupones de descuento", "Notificaciones por email"],
+          "installation": "docker-compose up -d && ./mvnw spring-boot:run"
+        }
+      }
+    ]
   },
   "contact": {
     "title": "Contacto",

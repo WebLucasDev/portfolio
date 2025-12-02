@@ -26,7 +26,67 @@
   },
   "about": {
     "title": "Sobre Mim",
-    "subtitle": "Em construção..."
+    "subtitle": "Conheça um pouco mais sobre minha trajetória",
+    "intro": "Desenvolvedor Back-end Java",
+    "introDescription": "com mais de 3 anos de experiência desenvolvendo soluções robustas e escaláveis. Apaixonado por boas práticas de código, arquitetura limpa e por resolver problemas complexos de forma elegante.",
+    "education": {
+      "title": "Formação Acadêmica",
+      "items": [
+        {
+          "degree": "Bacharelado em Sistemas de Informação",
+          "institution": "Universidade Federal",
+          "period": "2019 - 2023",
+          "description": "Formação sólida em fundamentos da computação, algoritmos, estruturas de dados e desenvolvimento de software."
+        }
+      ]
+    },
+    "certifications": {
+      "title": "Certificações",
+      "items": [
+        {
+          "name": "Oracle Certified Professional: Java SE 11 Developer",
+          "issuer": "Oracle",
+          "year": "2023"
+        },
+        {
+          "name": "AWS Certified Cloud Practitioner",
+          "issuer": "Amazon Web Services",
+          "year": "2023"
+        },
+        {
+          "name": "Spring Professional Certification",
+          "issuer": "VMware",
+          "year": "2022"
+        }
+      ]
+    },
+    "courses": {
+      "title": "Cursos & Especializações",
+      "items": [
+        {
+          "name": "Microservices com Spring Boot e Spring Cloud",
+          "platform": "Udemy",
+          "hours": "40h"
+        },
+        {
+          "name": "Docker & Kubernetes: The Complete Guide",
+          "platform": "Udemy",
+          "hours": "30h"
+        },
+        {
+          "name": "Clean Architecture",
+          "platform": "Alura",
+          "hours": "25h"
+        }
+      ]
+    },
+    "experience": {
+      "title": "Experiência",
+      "years": "+3 anos",
+      "description": "desenvolvendo aplicações enterprise"
+    },
+    "downloadCV": "Baixar Currículo",
+    "contactMe": "Entre em Contato"
   },
   "projects": {
     "title": "Projetos",

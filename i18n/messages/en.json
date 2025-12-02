@@ -26,7 +26,67 @@
   },
   "about": {
     "title": "About Me",
-    "subtitle": "Under construction..."
+    "subtitle": "Learn a little more about my journey",
+    "intro": "Java Back-end Developer",
+    "introDescription": "with over 3 years of experience developing robust and scalable solutions. Passionate about code best practices, clean architecture, and elegantly solving complex problems.",
+    "education": {
+      "title": "Education",
+      "items": [
+        {
+          "degree": "Bachelor's in Information Systems",
+          "institution": "Federal University",
+          "period": "2019 - 2023",
+          "description": "Solid foundation in computer science fundamentals, algorithms, data structures, and software development."
+        }
+      ]
+    },
+    "certifications": {
+      "title": "Certifications",
+      "items": [
+        {
+          "name": "Oracle Certified Professional: Java SE 11 Developer",
+          "issuer": "Oracle",
+          "year": "2023"
+        },
+        {
+          "name": "AWS Certified Cloud Practitioner",
+          "issuer": "Amazon Web Services",
+          "year": "2023"
+        },
+        {
+          "name": "Spring Professional Certification",
+          "issuer": "VMware",
+          "year": "2022"
+        }
+      ]
+    },
+    "courses": {
+      "title": "Courses & Specializations",
+      "items": [
+        {
+          "name": "Microservices with Spring Boot and Spring Cloud",
+          "platform": "Udemy",
+          "hours": "40h"
+        },
+        {
+          "name": "Docker & Kubernetes: The Complete Guide",
+          "platform": "Udemy",
+          "hours": "30h"
+        },
+        {
+          "name": "Clean Architecture",
+          "platform": "Alura",
+          "hours": "25h"
+        }
+      ]
+    },
+    "experience": {
+      "title": "Experience",
+      "years": "+3 years",
+      "description": "developing enterprise applications"
+    },
+    "downloadCV": "Download CV",
+    "contactMe": "Contact Me"
   },
   "projects": {
     "title": "Projects",

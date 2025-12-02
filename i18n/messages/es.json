@@ -26,7 +26,67 @@
   },
   "about": {
     "title": "Sobre Mí",
-    "subtitle": "En construcción..."
+    "subtitle": "Conoce un poco más sobre mi trayectoria",
+    "intro": "Desarrollador Back-end Java",
+    "introDescription": "con más de 3 años de experiencia desarrollando soluciones robustas y escalables. Apasionado por las buenas prácticas de código, arquitectura limpia y resolver problemas complejos de forma elegante.",
+    "education": {
+      "title": "Formación Académica",
+      "items": [
+        {
+          "degree": "Licenciatura en Sistemas de Información",
+          "institution": "Universidad Federal",
+          "period": "2019 - 2023",
+          "description": "Formación sólida en fundamentos de la computación, algoritmos, estructuras de datos y desarrollo de software."
+        }
+      ]
+    },
+    "certifications": {
+      "title": "Certificaciones",
+      "items": [
+        {
+          "name": "Oracle Certified Professional: Java SE 11 Developer",
+          "issuer": "Oracle",
+          "year": "2023"
+        },
+        {
+          "name": "AWS Certified Cloud Practitioner",
+          "issuer": "Amazon Web Services",
+          "year": "2023"
+        },
+        {
+          "name": "Spring Professional Certification",
+          "issuer": "VMware",
+          "year": "2022"
+        }
+      ]
+    },
+    "courses": {
+      "title": "Cursos y Especializaciones",
+      "items": [
+        {
+          "name": "Microservicios con Spring Boot y Spring Cloud",
+          "platform": "Udemy",
+          "hours": "40h"
+        },
+        {
+          "name": "Docker & Kubernetes: The Complete Guide",
+          "platform": "Udemy",
+          "hours": "30h"
+        },
+        {
+          "name": "Clean Architecture",
+          "platform": "Alura",
+          "hours": "25h"
+        }
+      ]
+    },
+    "experience": {
+      "title": "Experiencia",
+      "years": "+3 años",
+      "description": "desarrollando aplicaciones enterprise"
+    },
+    "downloadCV": "Descargar CV",
+    "contactMe": "Contáctame"
   },
   "projects": {
     "title": "Proyectos",
